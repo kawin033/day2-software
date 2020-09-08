@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         body: Container(
 
           color: Colors.blue,
-          child: Testwidget(),
+          child: TestStateful(),
           height: 1000.0,
           width: 1000.0,
         )
@@ -109,7 +109,7 @@ class Testwidget extends StatelessWidget {
     );
   }
 } */
-class Testwidget extends StatelessWidget {
+/* class Testwidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -135,6 +135,124 @@ class Testwidget extends StatelessWidget {
         color: Colors.lightGreen,
       ),
   
+      ],
+    );
+  }
+} */
+/* class Testwidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GridView.count(
+      crossAxisCount: 3,
+       children: [
+        Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.white10,
+      ),
+      Container(
+        height: 200,
+        color: Colors.yellow,
+      ),
+      Container(
+        height: 200,
+        color: Colors.black26,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.white10,
+      ),
+      Container(
+        height: 200,
+        color: Colors.yellow,
+      ),
+      Container(
+        height: 200,
+        color: Colors.black26,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.white10,
+      ),
+      Container(
+        height: 200,
+        color: Colors.yellow,
+      ),
+      Container(
+        height: 200,
+        color: Colors.black26,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.white10,
+      ),
+      Container(
+        height: 200,
+        color: Colors.yellow,
+      ),
+      Container(
+        height: 200,
+        color: Colors.black26,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+  
+      ],
+    );
+  }
+} */
+class TestStateful extends StatefulWidget {
+  @override
+  _State createState() => _State();
+}
+
+class _State extends State<TestStateful> {
+  int count=0;
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "HELLO count $count",
+          style:TextStyle(
+            fontSize: 50
+          ),
+        ),
+        RaisedButton(
+          onPressed: (){
+
+          }
+        ),
       ],
     );
   }
