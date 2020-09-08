@@ -112,41 +112,29 @@ class Testwidget extends StatelessWidget {
 class Testwidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return ListView(
       children: [
         Container(
-          margin: EdgeInsets.only(bottom: 50,top: 20,left: 10,right: 30),
-          padding: EdgeInsets.all(20),
-          color: Colors.black,
-          height: 100.0,
-          width: 100.0,
-          child: Container(
-            color: Colors.amberAccent,
-          ),
-        ),
-        Container(
-          alignment: Alignment(-0.5,1),
-          color: Colors.purple,
-          height: 200.0,
-          width: 200.0,
-          child: Text(
-            'Hello',
-            style: TextStyle(
-              fontSize: 50
-            ),
-            ),
-        ),
-        Expanded(
-          child: Container(
-            color: Colors.grey,
-          ),
-        ),
-        Expanded(
-          child: Container(
-            color: Colors.white,
-          )
-        )
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+      Container(
+        height: 200,
+        color: Colors.white10,
+      ),
+      Container(
+        height: 200,
+        color: Colors.yellow,
+      ),
+      Container(
+        height: 200,
+        color: Colors.black26,
+      ),
+      Container(
+        height: 200,
+        color: Colors.lightGreen,
+      ),
+  
       ],
     );
   }
