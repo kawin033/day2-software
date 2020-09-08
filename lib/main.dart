@@ -250,6 +250,9 @@ class _State extends State<TestStateful> {
         ),
         RaisedButton(
           onPressed: (){
+            setState(() {
+              count = count+1; 
+            });
 
           }
         ),
