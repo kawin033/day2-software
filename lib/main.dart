@@ -269,17 +269,17 @@ class _State extends State<TestStateful> {
       ],
     );
   }
-    List<Color> color =[Colors.black,Colors.pink];
+    List<Color> color =[Colors.brown,Colors.green,Colors.orange];
     int countColors = 0;
     onchangColors(){
-      if (countColors==0){
+      if (countColors >= 2){
         setState(() {
-          countColors = 1;
+          countColors = 0;
         });
       }
       else{
         setState(() {
-          countColors = 0;
+          countColors = countColors+1;
         });
       }
     }
