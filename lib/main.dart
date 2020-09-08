@@ -256,7 +256,31 @@ class _State extends State<TestStateful> {
 
           }
         ),
+        FlatButton(
+          onPressed: (){
+            onchangColors();
+          },
+          child: Container(
+            height: 100,
+            width: 200,
+            color: color[countColors],
+          )
+        )
       ],
     );
   }
+    List<Color> color =[Colors.black,Colors.pink];
+    int countColors = 0;
+    onchangColors(){
+      if (countColors==0){
+        setState(() {
+          countColors = 1;
+        });
+      }
+      else{
+        setState(() {
+          countColors = 0;
+        });
+      }
+    }
 }
